@@ -1,0 +1,153 @@
+section.parent {
+
+    display: grid;
+    grid-template-columns: repeat(3, 140px calc(100% - 140px - 120px - (10px * 2)) 120px);
+    grid-template-columns: repeat(3, 20% calc(100% - 20% - 120px - (10px * 2)) 120px);
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+
+    .container-start {
+
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 110px;
+        max-width: 160px;
+
+        .logo-z {
+
+            width: 80px;
+
+        }
+
+        .bottom-images-container {
+
+            .text {
+
+                .bold {
+
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size: 30px;
+
+                }
+
+                .light {
+
+                    font-family: sans-serif;
+                    font-size: 12px;
+                    color: lightgray;
+
+                }
+
+            }
+
+            .imgs {
+
+                img {
+
+                    margin-left: -25px;
+                    margin-left: -15%;
+                    width: 60px;
+                    width: calc(100% / 3 + 10%);
+
+                }
+
+                :nth-child(1) {
+
+                    margin-left: 0;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .container-middle {
+
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        width: 100%;
+
+        .header {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .bold {
+
+                font-family: system-ui, sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+
+            }
+
+            .light {
+
+                font-family: system-ui, sans-serif;
+                font-size: 14px;
+                color: lightgray;
+
+            }
+
+        }
+
+        textarea {
+
+            height: 100%;
+            border-color: #ABABAB;
+
+        }
+
+    }
+
+    .container-end {
+
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        min-width: 120px;
+        max-width: 140px;
+        width: 15%;
+
+        button {
+
+            border-radius: 8px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            font-family: system-ui, sans-serif;
+            font-size: 18px;
+            padding: 6px;
+            border: none;
+
+        }
+
+        .send {
+
+            background: #32C1FF;
+            height: 100%;
+
+        }
+
+        .cancel {
+
+            background: #FF0000;
+            margin-top: auto;
+
+
+        }
+
+    }
+
+}
